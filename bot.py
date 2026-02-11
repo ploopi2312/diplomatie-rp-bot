@@ -106,4 +106,6 @@ async def show(interaction: discord.Interaction):
     await refresh_panel(interaction)
     await interaction.response.send_message("📜 Panneau diplomatique mis à jour.", ephemeral=True)
 
-bot.run("MTQ3MDQyMDMwMTg3MDI3MjUyMw.GEzkmZ.KR029T7AjlBmMzAK-DYGLNGxC3wLhJC0c7p-aQ")
+import os
+bot.run(os.getenv("DISCORD_TOKEN"))
+
